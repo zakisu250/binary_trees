@@ -40,7 +40,7 @@ void tree_stats(const binary_tree_t *tree, size_t n,
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	size_t leaves_count = 0;
-	size_t leaves_height = 0;
+	size_t tree_height = 0;
 
 	tree_stats(tree, 0, &leaves_count, &tree_height);
 	return ((int)leaves_count == (1 << tree_height) ? 1 : 0);
