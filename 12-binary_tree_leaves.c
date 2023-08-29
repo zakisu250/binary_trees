@@ -19,7 +19,7 @@ void leaf_counter(const binary_tree_t *tree, size_t *n)
 		else
 		{
 			leaf_counter(tree->left, n);
-			leaf_counter(tree->right,n);
+			leaf_counter(tree->right, n);
 		}
 	}
 }
